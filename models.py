@@ -14,7 +14,7 @@ class User(Base):
 class Test(Base):
     __tablename__ = 'tests'
     id = Column(Integer, primary_key=True)
-    title = Column(String, index=True)
+    title = Column(String(50), index=True)
     description = Column(Text, nullable=True)
 
 class Question(Base):
